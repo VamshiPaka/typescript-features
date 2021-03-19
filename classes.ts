@@ -10,6 +10,11 @@ class Vehicle{
 
 //method overriding
 class Bike extends Vehicle{
+  constructor(public wheels:number,color:string){
+    super(color);
+
+  }
+
   private drive():void{
     console.log('Vroom Vroom');
   }
@@ -24,7 +29,7 @@ const vehicle=new Vehicle('orange');
 //vehicle.honk();
 console.log(vehicle.color);
 
-// const bike=new Bike();
-// bike.startDrivingProcess();
-// //bike.honk();
+const bike=new Bike(2,'Red-black');
+bike.startDrivingProcess();
+//bike.honk();
 
