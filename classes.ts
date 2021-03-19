@@ -1,4 +1,5 @@
 class Vehicle{
+  color: string='red';
   protected honk():void{
     console.log('peep peep');
   }
@@ -18,6 +19,7 @@ class Bike extends Vehicle{
 const vehicle=new Vehicle();
 //vehicle.drive();
 //vehicle.honk();
+console.log(vehicle.color);
 
 const bike=new Bike();
 bike.startDrivingProcess();
